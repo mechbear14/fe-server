@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<defs>
+    <filter id="camouflage">
+    <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0.04"
+                    numOctaves="2"
+                    result="turbulence"
+                    />
+    <feColorMatrix
+                    in="turbulence"
+                    result="desaturated"
+                    type="matrix"
+                    values="1 0 0 0 0 
+                            1 0 0 0 0 
+                            1 0 0 0 0 
+                            0 0 0 1 0"
+                    />
+    <feComponentTransfer in="desaturated" result="colourmap">
+        <feFuncR
+                type="table"
+                tableValues="0 0 0 0 0 0 0 1 1 1 1 1 1 1"
+                ></feFuncR>
+        <feFuncG
+                type="table"
+                tableValues="0 0 0 0 0 0 0 1 1 1 1 1 1 1"
+                ></feFuncG>
+        <feFuncB
+                type="table"
+                tableValues="0 0 0 0 0 0 0 1 1 1 1 1 1 1"
+                ></feFuncB>
+        <feFuncA type="table" tableValues="1"></feFuncA>
+    </feComponentTransfer>
+    <feComponentTransfer in="colourmap" result="finalcolour">
+        <feFuncR type="table" tableValues="0.471 0.306"></feFuncR>
+        <feFuncG type="table" tableValues="0.525 0.294"></feFuncG>
+        <feFuncB type="table" tableValues="0.420 0.173"></feFuncB>
+        <feFuncA type="table" tableValues="1"></feFuncA>
+    </feComponentTransfer>
+    </filter>
+</defs>
+</svg>

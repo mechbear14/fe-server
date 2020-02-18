@@ -1,0 +1,17 @@
+{
+  "name": "fe-server",
+  "version": "1.0.0",
+  "description": "Server for FE Level challenge",
+  "main": "main.js",
+  "scripts": {
+    "serve": "browser-refresh main",
+    "build": "node build"
+  },
+  "author": "Gabe Lyu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "liquidjs": "^9.7.0"
+  },
+  "devDependencies": {}
+}
