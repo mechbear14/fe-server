@@ -9,6 +9,7 @@
   },
   "author": "Gabe Lyu",
   "license": "MIT",
+  "repository": "fe-server",
   "dependencies": {
     "express": "^4.17.1",
     "liquidjs": "^9.7.0"
