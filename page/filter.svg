@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter>  
+    <filter id="FilterToPreview">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2"/>
     </filter>
   </defs>
 </svg>
