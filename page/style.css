@@ -6,3 +6,17 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas {
+  width: 640px;
+  height: 360px;
+  box-shadow: 0 0 2px 2px hsla(0, 0%, 0%, 0.2);
+}

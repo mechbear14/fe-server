@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    {% include "filter.svg" %}
-    {% if preview %}
-      {% include "refresh.liquid" %}
+    <div class="canvas"></div>
+    {% include "filter.svg" %} {% if preview %} {% include "refresh.liquid" %}
     {% endif%}
   </body>
 </html>
